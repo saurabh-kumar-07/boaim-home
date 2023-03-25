@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>baoiam-home</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="Logo.png" alt="" />
+        </div>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">Company<span style="color: tomato"> + </span></a>
+          <a href="#">Refers & Earn</a>
+          <a href="#">Courses</a>
+          <a href="#">Blogs</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="icon">
+          <i onclick="" class="fa fa-search"></i>
+          <a href="#">Login</a>
+        </div>
+      </nav>
+
+      <section class="h-text body-header">
+        <div class="head-text">
+          <h1 data-aos="zoom-in-down" data-aos-delay="100">
+            Unlock the full potential, Upgrade your
+            <span style="color: tomato"> Skills.</span>
+          </h1>
+          <p style="font-family: sans-serif; color: grey; padding-top: 10px">
+            Decipher your potential as a product leader with our cutting-edge
+            course by top-notch skilled trainers.
+          </p>
+        </div>
+        <div class="head-img">
+          <img class="bg-img" src="bg1.png" alt="" />
+        </div>
+      </section>
+    </header>
+
+    <section class="flex-container">
+      <div class="container">
+		<h4>1200+ Hrs of Learning</h4>
+		<br>
+		<p>We have already crossed 12500+ Hrs of learning on this platform</p>
+	  </div>
+      <div class="container">
+		<h4>1200+ Hrs of Learning</h4>
+		<br>
+		<p>We have already crossed 12500+ Hrs of learning on this platform</p>
+	  </div>
+      <div class="container">
+		<h4>1200+ Hrs of Learning</h4>
+		<br>
+		<p>We have already crossed 12500+ Hrs of learning on this platform</p>
+	  </div>
+      <div class="container">
+		<h4>1200+ Hrs of Learning</h4>
+		<br>
+		<p>We have already crossed 12500+ Hrs of learning on this platform</p>
+	  </div>
+    </section>
+
+    <footer>
+      <div class="newsletter">
+        <div data-aos="fade-up" data-aos-offset="200">
+          <h2>Subscribes for More information</h2>
+          <p>
+            consectetur sit nisi itaque ut vitae maiores. Facilis voluptatem
+            laborum impedit asperiores.
+          </p>
+        </div>
+        <div class="n-text" data-aos="fade-up-right" data-aos-offset="200">
+          <label>
+            <input type="text" name="" placeholder="Enter your email" />
+            <button>Subscribe</button>
+          </label>
+        </div>
+      </div>
+
+      <div class="f-contact" data-aos="zoom-in-up" data-aos-offset="200">
+        <div>
+          <h2>Contact Us</h2>
+          <p>B Block Noida Sector 15 Uttar Pradesh</p>
+          <p>tutors@baoiam.com</p>
+          <p>+91-9992754599</p>
+          <br />
+
+          <p>Follow Us:</p>
+          <i class="fa fa-whatsapp"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-telegram"></i>
+          <i class="fa fa-twitter"></i>
+        </div>
+
+        <div>
+          <h2>Quick links</h2>
+          <p>Home</p>
+          <p>Career</p>
+          <p>Hire from US</p>
+          <p>BTH-Talent Hunt Exam</p>
+          <p>Refers and Earn</p>
+          <p>Courses</p>
+        </div>
+
+        <div>
+          <h2>Other Link</h2>
+          <p>Blog</p>
+          <p>Events and Contest</p>
+          <p>COntact Us</p>
+        </div>
+
+        <div>
+          <h2>Courses</h2>
+          <p>Entrepreneurship</p>
+          <p>Product Management</p>
+          <p>SAP FICO</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+      $(".portfolio-item").isotope({
+        // options
+        itemSelector: ".item",
+        layoutMode: "fitRows",
+      });
+      $(".portfolio-menu ul li").click(function () {
+        $(".portfolio-menu ul li").removeClass("active");
+        $(this).addClass("active");
+
+        var selector = $(this).attr("data-filter");
+        $(".portfolio-item").isotope({
+          filter: selector,
+        });
+        return false;
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
